@@ -3,10 +3,12 @@
 class Share {
 	protected $link;
 	protected $text;
+	protected $media;
 
-	public function load($link, $text = ''){
+	public function load($link, $text = '', $media = ''){
 		$this->link = urlencode($link);
 		$this->text = urlencode($text);
+		$this->text = urlencode($media);
 
 		return $this;
 	}
@@ -56,7 +58,7 @@ class Share {
 	}
 
 	public function pinterest(){
-		return 'http://pinterest.com/pin/create/button/?url='.$this->link.(($this->text) ? '&description='.$this->text : '');
+		return 'http://pinterest.com/pin/create/button/?url='.$this->link.(($this->media) ? '&media='.$this->media : '').(($this->text) ? '&description='.$this->text : '');
 	}
 
 	public function reddit(){
