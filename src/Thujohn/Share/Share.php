@@ -8,7 +8,7 @@ class Share {
 	public function load($link, $text = '', $media = ''){
 		$this->link = urlencode($link);
 		$this->text = urlencode($text);
-		$this->text = urlencode($media);
+		$this->media = urlencode($media);
 
 		return $this;
 	}
