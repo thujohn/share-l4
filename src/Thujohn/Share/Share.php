@@ -84,4 +84,8 @@ class Share {
 	public function viadeo(){
 		return 'http://www.viadeo.com/?url='.$this->link.(($this->text) ? '&title='.$this->text : '');
 	}
+	
+	public function vk(){
+		return 'http://vk.com/share.php?url='.$this->link.(($this->media) ? '&image='.$this->media : '').(($this->text) ? '&title='.$this->text : '').'&noparse=false';
+	}
 }
