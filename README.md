@@ -52,7 +52,7 @@ Returns an array :
 	{"facebook":"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fwww.example.com&title=Link+description","gplus":"https:\/\/plus.google.com\/share?url=http%3A%2F%2Fwww.example.com","twitter":"https:\/\/twitter.com\/intent\/tweet?url=http%3A%2F%2Fwww.example.com&text=Link+description"}
 
 
-## Services availables
+## Services available
 - Delicious : delicious
 - Digg : digg
 - Evernote : evernote
@@ -67,3 +67,4 @@ Returns an array :
 - Tumblr : tumblr
 - Twitter : twitter
 - Viadeo : viadeo
+- vk.com : vk
