@@ -16,6 +16,13 @@ class Share {
 	public function services(){
 		$services = func_get_args();
 
+		$object = false;
+		if (end($services) === true)
+		{
+			$object = true;
+			array_pop($services);
+		}
+
 		$return = array();
 
 		if ($services){
@@ -24,6 +31,11 @@ class Share {
 					$return[$service] = $this->$service();
 				}
 			}
+		}
+
+		if ($object)
+		{
+			return (object) $return;
 		}
 
 		return $return;
